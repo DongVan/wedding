@@ -8,7 +8,7 @@ import Line from "@/components/Line.vue";
 			<div class="w-full text-center font-dancing font-bold text-[40px]">
 				<div class="mb-[-20px]">
 					Đông Văn
-					<v-icon size="24">mdi-heart-outline</v-icon>
+					<v-icon color="red" size="24">mdi-heart-outline</v-icon>
 					Nga Lê
 				</div>
 				<Line text="Just Married"></Line>
