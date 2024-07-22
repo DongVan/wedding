@@ -1,0 +1,77 @@
+@import "https://fonts.googleapis.com/css?family=Roboto";
+@import "tailwind.css";
+@import "fonts.css";
+
+:root {
+	--brown-color: #c89d9c;
+	--brown-border-color: #cdc2c2;
+}
+
+html.v-overlay-scroll-blocked {
+	overflow: hidden;
+}
+
+body {
+	font-family: "comfortaaregular", sans-serif;
+}
+
+.container {
+	margin: auto;
+	max-width: 80%;
+}
+
+.font-dancing {
+	font-family: "dancing_scriptregular", sans-serif !important;
+}
+
+.ps--active-x>.ps__rail-x,
+.ps--active-y>.ps__rail-y {
+	z-index: 1007;
+}
+
+.snowflake {
+	z-index: 100000;
+	position: fixed;
+	top: -10px;
+	border-radius: 50%;
+	pointer-events: none;
+	opacity: 0.1;
+	animation: fall linear infinite;
+	color: #D50000;
+}
+
+.snowflake i {
+	position: fixed;
+	top: -10px;
+	border-radius: 50%;
+	pointer-events: none;
+	animation: sway linear infinite;
+}
+
+.center-transform {
+	transform: translate(-50%, -50%);
+}
+
+@media (max-width: 992px) {
+	.container {
+		padding: 0 !important;
+		margin: auto;
+		max-width: calc(100% - 20px);
+	}
+}
+
+@keyframes fall {
+	to {
+		transform: translateY(100vh);
+	}
+}
+
+@keyframes sway {
+	0%, 100% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(40px);
+	}
+}
+
