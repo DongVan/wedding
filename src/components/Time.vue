@@ -33,9 +33,9 @@
 			<div class="p-2">7</div>
 			<div class="p-2">8</div>
 			<div class="p-2">9</div>
-			<div class="p-2 bg-[var(--brown-color)] rounded-lg text-white">10</div>
+			<div class="p-2">10</div>
 			<div class="p-2">11</div>
-			<div class="p-2">12</div>
+			<div class="p-2 bg-[var(--brown-color)] text-white">12</div>
 			<div class="p-2">13</div>
 			<div class="p-2">14</div>
 			<div class="p-2">15</div>

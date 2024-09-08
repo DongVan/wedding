@@ -2,9 +2,17 @@
 
 import {computed, ref} from "vue";
 import Title from "@/components/Title.vue";
-import VueGallery from 'vue-gallery';
+import VueEasyLightbox from 'vue-easy-lightbox'
+import 'vue-easy-lightbox/external-css/vue-easy-lightbox.css'
 
-const index = ref(null);
+const visibleRef = ref(false)
+const indexRef = ref(null);
+
+const showImg = (index) => {
+	indexRef.value = index
+	visibleRef.value = true
+}
+const onHide = () => visibleRef.value = false
 
 const gallery = computed(() => {
 	let result = [];
@@ -14,7 +22,6 @@ const gallery = computed(() => {
 
 	return result;
 });
-
 </script>
 
 <template>
@@ -29,12 +36,20 @@ const gallery = computed(() => {
 				class="image cursor-pointer"
 				v-for="(record, i) in gallery"
 				:key="i"
-				@click="index = i"
-				:style="{ backgroundImage: `url('${record}')`, height: '250px' }"
+				@click="() => showImg(i)"
+				:style="{ backgroundImage: `url('${record}')`, height: '400px' }"
 			></div>
 		</div>
 
-		<VueGallery :images="gallery" :index="index" @close="index = null"></VueGallery>
+		<VueEasyLightbox
+			:visible="visibleRef"
+			:imgs="gallery"
+			:index="indexRef"
+			zoomDisabled
+			scrollDisabled
+			:loop="true"
+			@hide="onHide"
+		></VueEasyLightbox>
 	</div>
 </template>
 

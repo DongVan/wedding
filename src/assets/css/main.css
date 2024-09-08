@@ -17,7 +17,7 @@ body {
 
 .container {
 	margin: auto;
-	max-width: 80%;
+	max-width: 950px;
 }
 
 .font-dancing {
@@ -50,6 +50,12 @@ body {
 
 .center-transform {
 	transform: translate(-50%, -50%);
+}
+
+.vel-img {
+	max-width: 90vw !important;
+	max-height: 90vh !important;
+	box-shadow: unset !important;
 }
 
 @media (max-width: 992px) {

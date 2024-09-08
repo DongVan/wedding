@@ -4,7 +4,7 @@ import Line from "@/components/Line.vue";
 
 <template>
 	<v-layout>
-		<v-app-bar class="border-b-1" height="120" flat scroll-behavior="hide">
+		<v-app-bar class="border-b-1" height="120" flat>
 			<div class="w-full text-center font-dancing font-bold text-[40px]">
 				<div class="mb-[-20px]">
 					Đông Văn
@@ -13,19 +13,6 @@ import Line from "@/components/Line.vue";
 				</div>
 				<Line text="Just Married"></Line>
 			</div>
-		</v-app-bar>
-		<v-app-bar class="border-b-1" height="60" flat>
-			<v-spacer></v-spacer>
-			<v-btn class="h-100" variant="text">
-				HOME
-			</v-btn>
-			<v-btn class="h-100" variant="text">
-				CONTACT
-			</v-btn>
-			<v-btn class="h-100" variant="text">
-				ABOUT
-			</v-btn>
-			<v-spacer></v-spacer>
 		</v-app-bar>
 	</v-layout>
 </template>

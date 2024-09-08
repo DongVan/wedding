@@ -15,9 +15,8 @@ defineProps({
 
 		<div class="container">
 			<v-timeline
-				class="pt-[40px]"
+				class="pt-[40px] text-justify"
 				align="center"
-				:side="mobile ? 'start' : ''"
 				:size="mobile ? 'x-small' : ''"
 			>
 				<v-timeline-item>

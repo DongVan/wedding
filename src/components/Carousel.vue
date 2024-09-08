@@ -9,7 +9,7 @@ const images = [
 </script>
 
 <template>
-	<v-carousel class="mt-[182px]" height="650px" :hide-delimiter-background="true" show-arrows="hover" cycle>
+	<v-carousel class="mt-[120px]" height="650px" :hide-delimiter-background="true" show-arrows="hover" cycle>
 		<v-carousel-item
 			v-for="record in images"
 			:key="record"
